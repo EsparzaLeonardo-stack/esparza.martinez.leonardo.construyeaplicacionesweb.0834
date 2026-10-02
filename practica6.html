@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Declara que este es un documento HTML5 -->
+<html lang="es"> <!-- Inicio del documento HTML en español -->
+<head>
+  <meta charset="UTF-8"> <!-- Configuración para aceptar acentos y caracteres especiales -->
+  <title>Semáforo TRIAGE</title> <!-- Título que aparece en la pestaña del navegador -->
+
+  <style>
+    /* Estilos CSS para diseñar la tabla */
+
+    table {
+      width: 480px; /* Ancho de la tabla */
+      margin: 20px auto; /* Centra la tabla en la pantalla */
+      border-collapse: collapse; /* Junta los bordes para que no se vean dobles */
+      text-align: center; /* Centra el texto de las celdas */
+      font-family: sans-serif; /* Tipo de letra sencillo */
+      font-size: 13px; /* Tamaño de la letra */
+    }
+
+    th, td {
+      border: 1px solid black; /* Bordes negros en cada celda */
+      padding: 5px; /* Espacio dentro de las celdas */
+    }
+
+    th {
+      background-color: #d0e0f0; /* Fondo azul claro para el encabezado */
+    }
+
+    /* Colores de texto y negrita según el nivel de urgencia */
+    .rojo { color: red; font-weight: bold; }
+    .naranja { color: orange; font-weight: bold; }
+    .amarillo { color: #d4a017; font-weight: bold; }
+    .verde { color: green; font-weight: bold; }
+    .azul { color: blue; font-weight: bold; }
+  </style>
+</head>
+<body> <!-- Contenido visible de la página -->
+
+  <!-- Tabla de datos -->
+  <table>
+    <!-- Fila del encabezado -->
+    <tr>
+      <th>Tipo de atención</th>
+      <th>Área de atención</th>
+      <th>Tiempo de espera</th>
+    </tr>
+
+    <!-- Fila 1: Reanimación (Rojo) -->
+    <tr class="rojo">
+      <td>Reanimación</td>
+      <td>Área de reanimación</td>
+      <td>Inmediato hasta 3 min</td>
+    </tr>
+
+    <!-- Fila 2: Emergencia (Naranja) -->
+    <tr class="naranja">
+      <td>Emergencia</td>
+      <td>Área de reanimación</td>
+      <td>Inmediato hasta 10 min</td>
+    </tr>
+
+    <!-- Fila 3: Urgencia (Amarillo) -->
+    <tr class="amarillo">
+      <td>Urgencia</td>
+      <td>Consultorio de primer contacto</td>
+      <td>Hasta 60 min</td>
+    </tr>
+
+    <!-- Fila 4: Urgencia menor (Verde) -->
+    <tr class="verde">
+      <td>Urgencia menor</td>
+      <td>Consultorio de primer contacto o UMF</td>
+      <td>Hasta 120 min</td>
+    </tr>
+
+    <!-- Fila 5: Sin urgencia (Azul) -->
+    <tr class="azul">
+      <td>Sin urgencia</td>
+      <td>Consultorio de primer contacto o UMF</td>
+      <td>Hasta 180 min</td>
+    </tr>
+  </table>
+
+  <!-- ============================================ -->
+  <!-- Datos del alumno                            -->
+  <!-- Nombre: Esparza Martinez Leonardo            -->
+  <!-- Grado y Grupo: 5-J                           -->
+  <!-- ============================================ -->
+
+</body>
+</html>
